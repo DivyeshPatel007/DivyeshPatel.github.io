@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <title>Divyesh Patel's Portfolio</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+     <nav id="navbar">
+        <div class="container">
+            <div class="portfolio-logo"></div>
+            <div class="navigation">
+                <ul class="list">
+                    <li class="list-items"><a href="index.html">Home</a></li>
+                    <li class="list-items"><a href="project.html">Projects</a></li>
+                    <li class="list-items"><a href="about.html">About Me</a></li>
+                    <li class="list-items"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-heading">
+               <div class="name">
+                 <span>Divyesh</span><span> Patel</span>
+               </div>
+                <p>UI/UX Designer and Front-end Developer</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        gsap.from("#navbar > div", 1.6, {
+            opacity: 0,
+            y: 60,
+            ease: Expo.easeInOut,
+            delay: 2.4,
+        });
+        gsap.from(".hero-heading > p", 1.6, {
+            opacity: 0,
+            x: -60,
+            ease: Expo.easeInOut,
+            delay: 2.4,
+        });
+        gsap.from(".hero-heading > .name >  span", 1.5, {
+            top: "-100vh",
+            ease: "bounce.out",
+            delay: 1,
+            stagger: 0.2,
+        });
+    </script>
+</body>
+
+</html>
