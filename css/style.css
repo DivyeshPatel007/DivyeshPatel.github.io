@@ -42,7 +42,7 @@ img {
     height: 100%;
     object-fit: contain;
     transition-duration: 250s;
-     -webkit-animation-duration: 250ms;
+    -webkit-animation-duration: 250ms;
 }
 
 .github a,
@@ -119,6 +119,7 @@ img {
     justify-content: center;
     align-items: center;
     height: 90vh;
+    padding: 0 20px;
 
 }
 
@@ -143,6 +144,22 @@ img {
     margin-top: 2rem;
     font-weight: 100;
     font-size: 3rem;
+}
+
+/* about */
+#about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    padding: 0 20px;
+}
+
+#about .container .about-heading p {
+    margin-top: 2rem;
+    font-weight: 100;
+    font-size: 1.2rem;
+    width: 850px;
 }
 
 /* Projects */
@@ -174,14 +191,16 @@ img {
     border-radius: 15px;
     box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, .05);
     -webkit-animation-duration: 250ms;
-    
+
 }
 
- #project .card:hover img{
+
+#project .card:hover img {
     object-fit: cover;
-     
+
 }
-#project .card:hover{
+
+#project .card:hover {
     box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, .1);
 }
 
@@ -213,7 +232,7 @@ img {
     }
 
     #navbar .container .navigation .list .list-items a {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     /* ------------------------Hero-------------------------------------------- */
@@ -225,12 +244,12 @@ img {
 
     #hero .container .hero-heading span {
 
-        font-size: 7rem;
+        font-size: 5rem;
         width: 500px;
     }
 
     #hero .container .hero-heading p {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
 
